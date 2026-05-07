@@ -86,6 +86,35 @@ h1, h2, h3, .navbar-brand {
     letter-spacing: -0.5px !important;
 }
 
+/* Responsive Navbar Enhancements */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: rgba(15, 23, 42, 0.95);
+        backdrop-filter: blur(20px);
+        margin-top: 15px;
+        padding: 25px;
+        border-radius: 24px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    .navbar-nav .nav-link {
+        padding: 12px 0 !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .navbar-nav .nav-item:last-child .nav-link {
+        border-bottom: none;
+    }
+    .navbar-nav .btn {
+        width: 100%;
+        margin-top: 15px;
+        margin-left: 0 !important;
+        padding: 12px !important;
+    }
+    .theme-toggle {
+        margin: 15px auto;
+    }
+}
+
 /* Hero Section */
 .hero-section {
     padding: 120px 0 80px;
@@ -355,4 +384,113 @@ footer {
     border: 1px solid rgba(255, 255, 255, 0.1) !important;
     border-radius: 16px;
     overflow: hidden;
+}
+
+/* ============================================
+   Modern Sidebar Dashboard System (Reference Style)
+   ============================================ */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+[data-theme="dark"] .dashboard-container {
+    background: #020617;
+    color: #f8fafc;
+}
+
+.dashboard-sidebar {
+    width: 280px;
+    background: white;
+    border-right: 1px solid rgba(0,0,0,0.05);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+    z-index: 1000;
+}
+
+[data-theme="dark"] .dashboard-sidebar {
+    background: rgba(15, 23, 42, 0.95);
+    border-right: 1px solid rgba(255,255,255,0.05);
+    backdrop-filter: blur(20px);
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 20px;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    transition: all 0.2s;
+    opacity: 0.7;
+}
+
+.sidebar-link i { font-size: 1.1rem; }
+.sidebar-link:hover, .sidebar-link.active {
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--accent);
+    opacity: 1;
+}
+
+.dashboard-content {
+    flex-grow: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.dashboard-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/* Reference Card Style (Icon Boxes) */
+.summary-box {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    height: 100%;
+    border: 1px solid rgba(0,0,0,0.03);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+}
+
+[data-theme="dark"] .summary-box {
+    background: rgba(255,255,255,0.03);
+    border-color: rgba(255,255,255,0.05);
+}
+
+.icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.bg-soft-blue { background: #e0f2fe; color: #0369a1; }
+.bg-soft-purple { background: #f3e8ff; color: #7e22ce; }
+.bg-soft-orange { background: #ffedd5; color: #c2410c; }
+.bg-soft-green { background: #dcfce7; color: #15803d; }
+
+@media (max-width: 991.98px) {
+    .dashboard-sidebar {
+        position: fixed;
+        left: -280px;
+        height: 100vh;
+    }
+    .dashboard-sidebar.show {
+        left: 0;
+    }
+    .dashboard-content { padding: 20px; }
 }
