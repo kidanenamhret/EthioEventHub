@@ -136,13 +136,13 @@ $base_url = '';
 
     <header class="hero-section">
         <div class="container">
-            <span class="badge bg-soft-primary mb-3 animate-fade-in">
-                <i class="fas fa-sparkles me-1"></i> <?= __('#1_platform') ?>
-            </span>
+            <div class="hero-badge animate-fade-in">
+                <i class="fas fa-crown me-2" style="color: #f5b041;"></i> <?= __('#1_platform') ?>
+            </div>
             <h1 class="hero-title animate-fade-in"><?= __('welcome') ?></h1>
-            <p class="lead mb-5 fs-4 text-white-50 animate-fade-in" style="animation-delay: 0.1s"><?= __('subtitle') ?></p>
+            <p class="hero-subtitle animate-fade-in" style="animation-delay: 0.1s"><?= __('subtitle') ?></p>
             <div class="d-flex justify-content-center gap-3 animate-fade-in" style="animation-delay: 0.2s">
-                <a href="pages/events.php" class="btn btn-primary btn-lg px-5 shadow"><?= __('explore_events') ?></a>
+                <a href="pages/events.php" class="btn btn-primary btn-lg px-5 shadow-lg"><?= __('explore_events') ?></a>
                 <a href="pages/register.php" class="btn btn-secondary btn-lg px-5"><?= __('join_organizer') ?></a>
             </div>
         </div>

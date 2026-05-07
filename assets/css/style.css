@@ -5,12 +5,13 @@
     --accent: #6366f1;
     --accent-light: #a5b4fc;
     --secondary: #ec4899;
-    --bg-color: #f8fafc;
-    --text-color: #0f172a;
-    --card-bg: rgba(255, 255, 255, 0.8);
-    --nav-bg: rgba(255, 255, 255, 0.8);
-    --glass: rgba(255, 255, 255, 0.5);
-    --glass-border: rgba(0, 0, 0, 0.1);
+    --bg-color: #020617;
+    --text-color: #ffffff;
+    --card-bg: rgba(255, 255, 255, 0.03);
+    --nav-bg: rgba(2, 6, 23, 0.85);
+    --glass: rgba(255, 255, 255, 0.04);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-blur: 12px;
 }
 
 [data-theme="dark"] {
@@ -80,8 +81,9 @@ h1, h2, h3, .navbar-brand {
 }
 
 .navbar-brand {
-    font-size: 1.5rem;
-    letter-spacing: -1px;
+    font-size: clamp(1.2rem, 5vw, 1.6rem) !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.5px !important;
 }
 
 /* Hero Section */
@@ -91,14 +93,38 @@ h1, h2, h3, .navbar-brand {
 }
 
 .hero-title {
-    font-size: 5rem;
-    font-weight: 800;
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-weight: 900;
     line-height: 1.1;
     background: linear-gradient(135deg, #fff 0%, #a5b4fc 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 1.5rem;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(99, 102, 241, 0.12);
+    backdrop-filter: blur(4px);
+    padding: 0.6rem 1.4rem;
+    border-radius: 60px;
+    font-size: clamp(0.75rem, 3vw, 0.9rem);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(255,255,255,0.15);
+    color: var(--accent-light);
+}
+
+.hero-subtitle {
+    font-size: clamp(1rem, 4vw, 1.25rem);
+    color: rgba(255,255,255,0.6);
+    max-width: 800px;
+    margin: 0 auto 2.5rem auto;
+    line-height: 1.6;
 }
 
 /* Glass Cards */
