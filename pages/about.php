@@ -12,7 +12,7 @@ $base_url = '../';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - EthioEvent Hub</title>
+    <title><?= __('about') ?> - EthioEvent Hub</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
@@ -41,32 +41,32 @@ $base_url = '../';
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <div class="about-card animate-fade-in">
-                    <h1 class="display-4 fw-bold text-white mb-4">Our <span class="text-accent">Vision</span></h1>
+                    <h1 class="display-4 fw-bold text-white mb-4"><?= __('our_vision') ?></h1>
                     <p class="lead text-white-50 mb-5">
-                        EthioEvent Hub is Ethiopia's first centralized event ecosystem. Our mission is to bridge the gap between world-class event organizers and curious attendees through technology, security, and exceptional design.
+                        <?= __('vision_description') ?>
                     </p>
                     
                     <div class="row g-4 mt-5">
                         <div class="col-md-4 text-center">
                             <i class="fas fa-shield-alt fa-3x text-accent mb-3"></i>
-                            <h5 class="text-white fw-bold">Secure Booking</h5>
-                            <p class="text-white-50 small">Verified tickets and encrypted transactions for your peace of mind.</p>
+                            <h5 class="text-white fw-bold"><?= __('secure_booking') ?></h5>
+                            <p class="text-white-50 small"><?= __('secure_booking_desc') ?></p>
                         </div>
                         <div class="col-md-4 text-center">
                             <i class="fas fa-rocket fa-3x text-accent mb-3"></i>
-                            <h5 class="text-white fw-bold">Fast Discovery</h5>
-                            <p class="text-white-50 small">Find the best cultural, musical, and tech events in seconds.</p>
+                            <h5 class="text-white fw-bold"><?= __('fast_discovery') ?></h5>
+                            <p class="text-white-50 small"><?= __('fast_discovery_desc') ?></p>
                         </div>
                         <div class="col-md-4 text-center">
                             <i class="fas fa-chart-pie fa-3x text-accent mb-3"></i>
-                            <h5 class="text-white fw-bold">Organizer Tools</h5>
-                            <p class="text-white-50 small">Advanced analytics and CSV reporting for professional management.</p>
+                            <h5 class="text-white fw-bold"><?= __('organizer_tools') ?></h5>
+                            <p class="text-white-50 small"><?= __('organizer_tools_desc') ?></p>
                         </div>
                     </div>
 
                     <hr class="border-white opacity-10 my-5">
 
-                    <h2 class="text-white fw-bold mb-5 text-center">The Project Team</h2>
+                    <h2 class="text-white fw-bold mb-5 text-center"><?= __('project_team') ?></h2>
                     <div class="row g-4 text-center">
                         <?php 
                         $team = ['Mesfin', 'Biruktawit', 'Yonas', 'Edget', 'Ebsitu'];

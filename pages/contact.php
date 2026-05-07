@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - EthioEvent Hub</title>
+    <title><?= __('contact') ?> - EthioEvent Hub</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
@@ -59,13 +59,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="container py-5">
         <div class="row g-5">
             <div class="col-lg-5">
-                <h1 class="display-5 fw-bold text-white mb-4">Get in <span class="text-accent">Touch</span></h1>
-                <p class="text-white-50 mb-5">Have questions about an event or need technical support? We're here to help.</p>
+                <h1 class="display-5 fw-bold text-white mb-4"><?= __('get_in_touch') ?></h1>
+                <p class="text-white-50 mb-5"><?= __('contact_desc') ?></p>
                 
                 <div class="d-flex align-items-center mb-4 text-white">
                     <div class="contact-icon me-3"><i class="fas fa-envelope"></i></div>
                     <div>
-                        <div class="small text-white-50">Email Support</div>
+                        <div class="small text-white-50"><?= __('email_support') ?></div>
                         <div class="fw-bold">hello@ethioeventhub.com</div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="d-flex align-items-center mb-4 text-white">
                     <div class="contact-icon me-3"><i class="fas fa-phone"></i></div>
                     <div>
-                        <div class="small text-white-50">Phone</div>
+                        <div class="small text-white-50"><?= __('phone') ?></div>
                         <div class="fw-bold">+251 911 22 33 44</div>
                     </div>
                 </div>
@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="d-flex align-items-center mb-5 text-white">
                     <div class="contact-icon me-3"><i class="fas fa-map-marker-alt"></i></div>
                     <div>
-                        <div class="small text-white-50">Office</div>
+                        <div class="small text-white-50"><?= __('office') ?></div>
                         <div class="fw-bold">Bole, Addis Ababa, Ethiopia</div>
                     </div>
                 </div>
@@ -104,28 +104,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <form method="POST">
                         <div class="row g-4">
                             <div class="col-md-6">
-                                <label class="form-label small fw-bold text-white-50 text-uppercase">Full Name</label>
+                                <label class="form-label small fw-bold text-white-50 text-uppercase"><?= __('full_name') ?></label>
                                 <input type="text" name="name" class="form-control py-3" placeholder="Abebe Bikila" required>
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label small fw-bold text-white-50 text-uppercase">Email</label>
+                                <label class="form-label small fw-bold text-white-50 text-uppercase"><?= __('email') ?></label>
                                 <input type="email" name="email" class="form-control py-3" placeholder="abebe@example.com" required>
                             </div>
                             <div class="col-md-12">
-                                <label class="form-label small fw-bold text-white-50 text-uppercase">Subject</label>
+                                <label class="form-label small fw-bold text-white-50 text-uppercase"><?= __('subject') ?></label>
                                 <select class="form-select bg-dark border-0 text-white py-3 rounded-4" style="background: rgba(255,255,255,0.05) !important; color:white !important; border: 1px solid rgba(255,255,255,0.1) !important;">
-                                    <option>General Inquiry</option>
-                                    <option>Technical Support</option>
-                                    <option>Organizer Partnership</option>
-                                    <option>Ticket Issue</option>
+                                    <option><?= __('general_inquiry') ?></option>
+                                    <option><?= __('technical_support') ?></option>
+                                    <option><?= __('organizer_partnership') ?></option>
+                                    <option><?= __('ticket_issue') ?></option>
                                 </select>
                             </div>
                             <div class="col-md-12">
-                                <label class="form-label small fw-bold text-white-50 text-uppercase">Message</label>
-                                <textarea name="message" class="form-control py-3" rows="5" placeholder="How can we help you?" required></textarea>
+                                <label class="form-label small fw-bold text-white-50 text-uppercase"><?= __('message') ?></label>
+                                <textarea name="message" class="form-control py-3" rows="5" placeholder="<?= __('message') ?>..." required></textarea>
                             </div>
                             <div class="col-md-12 mt-4">
-                                <button type="submit" class="btn btn-primary btn-lg w-100 py-3 rounded-pill fw-bold shadow-lg">SEND MESSAGE</button>
+                                <button type="submit" class="btn btn-primary btn-lg w-100 py-3 rounded-pill fw-bold shadow-lg"><?= strtoupper(__('send_message')) ?></button>
                             </div>
                         </div>
                     </form>
