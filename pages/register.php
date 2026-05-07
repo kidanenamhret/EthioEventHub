@@ -145,10 +145,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
 
                     <?php if ($error): ?>
-                        <div class="alert alert-danger border-0 bg-danger bg-opacity-10 text-danger"><?= $error ?></div>
+                        <div class="alert alert-danger border-0 bg-danger bg-opacity-10 text-danger mb-4 p-3 rounded-4 animate-fade-in">
+                            <i class="fas fa-exclamation-circle me-2"></i> <?= $error ?>
+                        </div>
                     <?php endif; ?>
                     <?php if ($success): ?>
-                        <div class="alert alert-success border-0 bg-success bg-opacity-10 text-success"><?= $success ?></div>
+                        <div class="alert alert-success border-0 bg-success bg-opacity-10 text-success mb-4 p-3 rounded-4 animate-fade-in">
+                            <i class="fas fa-check-circle me-2"></i> <?= $success ?>
+                        </div>
                     <?php endif; ?>
 
                     <form method="POST" id="regForm">

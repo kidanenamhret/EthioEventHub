@@ -153,8 +153,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['change_password'])) {
                 <div class="profile-card p-4 p-md-5">
                     <h2 class="text-white fw-bold mb-4"><i class="fas fa-id-card me-2 text-accent"></i> My Account</h2>
 
-                    <?php if ($error): ?><div class="alert alert-danger bg-danger bg-opacity-10 border-0 text-danger"><?= $error ?></div><?php endif; ?>
-                    <?php if ($success): ?><div class="alert alert-success bg-success bg-opacity-10 border-0 text-success"><?= $success ?></div><?php endif; ?>
+                    <?php if ($error): ?>
+                        <div class="alert alert-danger bg-danger bg-opacity-10 border-0 text-danger mb-4 p-3 rounded-4 animate-fade-in">
+                            <i class="fas fa-exclamation-circle me-2"></i> <?= $error ?>
+                        </div>
+                    <?php endif; ?>
+                    <?php if ($success): ?>
+                        <div class="alert alert-success bg-success bg-opacity-10 border-0 text-success mb-4 p-3 rounded-4 animate-fade-in">
+                            <i class="fas fa-check-circle me-2"></i> <?= $success ?>
+                        </div>
+                    <?php endif; ?>
 
                     <!-- Profile Picture Section -->
                     <div class="text-center mb-5">

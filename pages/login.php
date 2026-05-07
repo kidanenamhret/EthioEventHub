@@ -144,7 +144,7 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
                     </div>
 
                     <?php if (!empty($error)): ?>
-                        <div class="alert alert-danger border-0 bg-danger bg-opacity-10 text-danger rounded-3" role="alert">
+                        <div class="alert alert-danger border-0 bg-danger bg-opacity-10 text-danger mb-4 p-3 rounded-4 animate-fade-in" role="alert">
                             <i class="fas fa-exclamation-circle me-2"></i> <?= htmlspecialchars($error) ?>
                         </div>
                     <?php endif; ?>
