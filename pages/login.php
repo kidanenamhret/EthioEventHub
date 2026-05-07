@@ -138,7 +138,7 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
             <div class="col-md-5">
                 <div class="login-card p-4 p-md-5 animate-fade-in">
                     <div class="text-center mb-5">
-                        <i class="fas fa-bolt fa-3x mb-3" style="color: #6366f1;"></i>
+                        <img src="../assets/images/logo.png" alt="Logo" width="80" height="80" class="mb-4 rounded-circle object-fit-cover shadow-lg">
                         <h2 class="fw-bold text-white">EthioEvent Hub</h2>
                         <p class="text-white-50">Secure Login Portal</p>
                     </div>

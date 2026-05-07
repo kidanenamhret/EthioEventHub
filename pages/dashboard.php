@@ -242,7 +242,10 @@ $_SESSION['csrf_token'] = $_SESSION['csrf_token'] ?? bin2hex(random_bytes(32));
             <?php elseif ($role === 'organizer'): ?>
                 <div class="col-sm-6 col-lg-4">
                     <div class="stat-card">
-                        <h6 class="text-white-50 fw-bold small text-uppercase mb-3">My Events</h6>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h6 class="text-white-50 fw-bold small text-uppercase mb-0">My Events</h6>
+                            <a href="my_events.php" class="text-accent small text-decoration-none fw-bold">View All</a>
+                        </div>
                         <h2 class="fw-bold text-white"><?= number_format($stats['total_events']) ?></h2>
                     </div>
                 </div>

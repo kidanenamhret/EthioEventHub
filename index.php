@@ -136,8 +136,8 @@ $base_url = '';
 
     <header class="hero-section">
         <div class="container">
-            <span class="badge bg-soft-primary text-primary mb-3 px-3 py-2 rounded-pill animate-fade-in">
-                <i class="fas fa-sparkles me-1"></i> #1 EVENT PLATFORM IN ETHIOPIA
+            <span class="badge bg-soft-primary mb-3 animate-fade-in">
+                <i class="fas fa-sparkles me-1"></i> <?= __('#1_platform') ?>
             </span>
             <h1 class="hero-title animate-fade-in"><?= __('welcome') ?></h1>
             <p class="lead mb-5 fs-4 text-white-50 animate-fade-in" style="animation-delay: 0.1s"><?= __('subtitle') ?></p>
@@ -220,7 +220,10 @@ $base_url = '';
         <div class="container">
             <div class="row g-4 text-start">
                 <div class="col-lg-4">
-                    <h4 class="fw-bold text-white mb-4"><i class="fas fa-bolt me-2 text-accent"></i> ETHIO EVENT HUB</h4>
+                    <h4 class="fw-bold text-white mb-4 d-flex align-items-center">
+                        <img src="assets/images/logo.png" alt="Logo" width="35" height="35" class="me-2 rounded-circle object-fit-cover">
+                        ETHIO EVENT HUB
+                    </h4>
                     <p class="text-white-50">The premium platform for Ethiopia's event architecture. Discover and book experiences that matter.</p>
                 </div>
                 <div class="col-lg-2 offset-lg-2">

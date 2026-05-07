@@ -1,13 +1,14 @@
 <?php
 if (!isset($base_url)) {
-    // Detect if we are in a subdirectory like /pages/
-    $base_url = (strpos($_SERVER['PHP_SELF'], '/pages/') !== false) ? '../' : '';
+    // Determine the relative path to the root directory
+    $script_path = $_SERVER['PHP_SELF'];
+    $base_url = (strpos($script_path, '/pages/') !== false) ? '../' : '';
 }
 ?>
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center fw-bold" href="<?= $base_url ?>index.php">
-            <img src="<?= $base_url ?>assets/images/logo.png" alt="EthioEvent Hub" height="40" class="me-2">
+            <img src="<?= $base_url ?>assets/images/logo.png" alt="EthioEvent Hub" width="40" height="40" class="me-2 rounded-circle object-fit-cover">
             ETHIO EVENT HUB
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">

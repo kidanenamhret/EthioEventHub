@@ -22,7 +22,12 @@
         "stats_users": "USERS",
         "stats_venues": "VENUES",
         "stats_verified": "VERIFIED",
-        "no_events_found": "No upcoming events found matching your criteria."
+        "no_events_found": "No upcoming events found matching your criteria.",
+        "book_now": "Book Now",
+        "details": "Details",
+        "free": "Free",
+        "etb": "ETB",
+        "#1_platform": "#1 EVENT PLATFORM IN ETHIOPIA"
     },
     "am": {
         "welcome": "የኢትዮጵያ ምሽቶችን አስማት ያግኙ",
@@ -47,7 +52,12 @@
         "stats_users": "ተጠቃሚዎች",
         "stats_venues": "ቦታዎች",
         "stats_verified": "የተረጋገጠ",
-        "no_events_found": "ከእርስዎ ፍላጎት ጋር የሚዛመዱ መጪ ዝግጅቶች አልተገኙም።"
+        "no_events_found": "ከእርስዎ ፍላጎት ጋር የሚዛመዱ መጪ ዝግጅቶች አልተገኙም።",
+        "book_now": "አሁን ይያዙ",
+        "details": "ዝርዝሮች",
+        "free": "ነፃ",
+        "etb": "ብር",
+        "#1_platform": "#1 የክስተት መድረክ በኢትዮጵያ"
     },
     "om": {
         "welcome": "Magic Halkanoota Itoophiyaa Argadhu",
@@ -62,7 +72,7 @@
         "get_started": "Eegali",
         "logout": "Ba'i",
         "dashboard": "Daashboordii",
-        "wishlist": "Wishlist",
+        "wishlist": "Tarree Hawwii",
         "profile": "Piroofayilii",
         "featured_experiences": "Muxannoo Filataman",
         "view_all": "Hunda Ilaali",
@@ -72,6 +82,11 @@
         "stats_users": "FAYADAMTOTA",
         "stats_venues": "BAKKAWWAN",
         "stats_verified": "MIRKANAAYE",
-        "no_events_found": "Agarsiisota dhihaatan kan ulaagaa keessan guutan hin argamne."
+        "no_events_found": "Agarsiisota dhihaatan kan ulaagaa keessan guutan hin argamne.",
+        "book_now": "Amma Qabadhu",
+        "details": "Bal'ina",
+        "free": "Bilisa",
+        "etb": "ETB",
+        "#1_platform": "#1 MADDA AGARSIISAA ITOOPHIYAA KEESSATTI"
     }
 }

@@ -139,7 +139,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="col-md-7 col-lg-6">
                 <div class="auth-card p-4 p-md-5 animate-fade-in">
                     <div class="text-center mb-5">
-                        <i class="fas fa-user-plus fa-3x mb-3 text-accent"></i>
+                        <img src="../assets/images/logo.png" alt="Logo" width="80" height="80" class="mb-4 rounded-circle object-fit-cover shadow-lg">
                         <h2 class="fw-bold text-white">Join the Hub</h2>
                         <p class="text-white-50">Create your account to start experiencing events</p>
                     </div>
