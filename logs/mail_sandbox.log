@@ -1,0 +1,341 @@
+[2026-05-06 05:40:06] TO: eyoas8@gmail.com | SUBJECT: Password Reset Request
+MESSAGE: Click here to reset your password: http://localhost/Wep_Programming_Pro/EthioEventHub/pages/reset_password.php?token=af144ffa5199fa34d4639089567ad36f0a60640cc8a110876b11dcf3ecee4ead
+--------------------------------------------
+[2026-05-06 23:43:27] TO: mesfin6323@gmail.com | SUBJECT: Password Reset - EthioEvent Hub | MESSAGE: Hello Naole,
+
+You requested a password reset. Click the link below to set a new password:
+http://localhost/Wep_Programming_Pro/EthioEventHub/pages/reset_password.php?token=da2f310b960b771c010263fa7ff791e56d1a0c30aa2f886cd65bcc651e686985
+
+This link expires in 1 hour.
+--------------------------------------------------------------------------------
+[2026-05-07 01:13:09] TO: test@test.com | SUBJECT: ✨ Welcome to EthioEvent Hub! | MESSAGE: 
+    <html>
+    <body style='font-family: Arial, sans-serif;'>
+        <div style='padding: 20px; border: 1px solid #eee; border-radius: 10px;'>
+            <h2 style='color: #6366f1;'>Welcome, Test User!</h2>
+            <p>Thank you for joining EthioEvent Hub, Ethiopia's premier event platform.</p>
+            <p>You can now browse events, follow your favorite organizers, and book tickets instantly.</p>
+            <p>Ready to explore?</p>
+            <a href='#' style='padding: 10px 20px; background: #6366f1; color: white; text-decoration: none; border-radius: 5px;'>Start Browsing</a>
+        </div>
+    </body>
+    </html>
+    
+--------------------------------------------------------------------------------
+[2026-05-07 01:21:37] TO: organizer2@test.com | SUBJECT: ✨ Welcome to EthioEvent Hub! | MESSAGE: 
+    <html>
+    <body style='font-family: Arial, sans-serif;'>
+        <div style='padding: 20px; border: 1px solid #eee; border-radius: 10px;'>
+            <h2 style='color: #6366f1;'>Welcome, Organizer Two!</h2>
+            <p>Thank you for joining EthioEvent Hub, Ethiopia's premier event platform.</p>
+            <p>You can now browse events, follow your favorite organizers, and book tickets instantly.</p>
+            <p>Ready to explore?</p>
+            <a href='#' style='padding: 10px 20px; background: #6366f1; color: white; text-decoration: none; border-radius: 5px;'>Start Browsing</a>
+        </div>
+    </body>
+    </html>
+    
+--------------------------------------------------------------------------------
+[2026-05-07 01:26:32] TO: a@b.com | SUBJECT: ✨ Welcome to EthioEvent Hub! | MESSAGE: 
+    <html>
+    <body style='font-family: Arial, sans-serif;'>
+        <div style='padding: 20px; border: 1px solid #eee; border-radius: 10px;'>
+            <h2 style='color: #6366f1;'>Welcome, Test User One!</h2>
+            <p>Thank you for joining EthioEvent Hub, Ethiopia's premier event platform.</p>
+            <p>You can now browse events, follow your favorite organizers, and book tickets instantly.</p>
+            <p>Ready to explore?</p>
+            <a href='#' style='padding: 10px 20px; background: #6366f1; color: white; text-decoration: none; border-radius: 5px;'>Start Browsing</a>
+        </div>
+    </body>
+    </html>
+    
+--------------------------------------------------------------------------------
+[2026-05-07 01:43:07] TO: ae847318@gmail.com | SUBJECT: ✨ Welcome to EthioEvent Hub! | MESSAGE: 
+    <html>
+    <body style='font-family: Arial, sans-serif;'>
+        <div style='padding: 20px; border: 1px solid #eee; border-radius: 10px;'>
+            <h2 style='color: #6366f1;'>Welcome, Mikiyas!</h2>
+            <p>Thank you for joining EthioEvent Hub, Ethiopia's premier event platform.</p>
+            <p>You can now browse events, follow your favorite organizers, and book tickets instantly.</p>
+            <p>Ready to explore?</p>
+            <a href='#' style='padding: 10px 20px; background: #6366f1; color: white; text-decoration: none; border-radius: 5px;'>Start Browsing</a>
+        </div>
+    </body>
+    </html>
+    
+--------------------------------------------------------------------------------
+[2026-05-07 01:44:30] TO: ae847318@gmail.com | SUBJECT: 🎫 Booking Confirmation - Ethio Jazz Night | MESSAGE: 
+    <html>
+    <head>
+        <style>
+            body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
+            .wrapper { max-width: 600px; margin: 0 auto; border: 1px solid #eee; border-radius: 15px; overflow: hidden; }
+            .header { background: linear-gradient(135deg, #6366f1, #9333ea); padding: 40px 20px; color: white; text-align: center; }
+            .content { padding: 30px; }
+            .ticket { border: 2px dashed #6366f1; padding: 25px; margin: 25px 0; border-radius: 15px; background: #f8fafc; }
+            .ticket-title { color: #1e1b4b; margin-top: 0; font-size: 22px; }
+            .footer { background: #f1f5f9; padding: 20px; text-align: center; font-size: 12px; color: #64748b; }
+            .btn { display: inline-block; padding: 12px 25px; background: #6366f1; color: white; text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 20px; }
+        </style>
+    </head>
+    <body>
+        <div class='wrapper'>
+            <div class='header'>
+                <h1 style='margin:0;'>EthioEvent Hub</h1>
+                <p style='margin:5px 0 0;'>Your Premium Ticket is Confirmed!</p>
+            </div>
+            <div class='content'>
+                <h3>Hello Mikiyas,</h3>
+                <p>Congratulations! Your booking for the upcoming event has been successfully confirmed. We're excited to have you join us.</p>
+                
+                <div class='ticket'>
+                    <h3 class='ticket-title'>Ethio Jazz Night</h3>
+                    <p style='margin:5px 0;'><strong>📅 Date:</strong> Jun 15, 2026</p>
+                    <p style='margin:5px 0;'><strong>📍 Venue:</strong> Ghion Hotel</p>
+                    <p style='margin:5px 0;'><strong>🎟️ Quantity:</strong> 1 Tickets</p>
+                    <p style='margin:5px 0;'><strong>💰 Total:</strong> ETB 30.00</p>
+                    <p style='margin:15px 0 0; color:#6366f1; font-family:monospace; font-size:18px;'><strong>REF: ETH-F192FCDA</strong></p>
+                </div>
+                
+                <p>Please present the reference code or your digital ticket at the entrance.</p>
+                <a href='#' class='btn'>View in Dashboard</a>
+                <p style='margin-top:25px;'>Enjoy the experience! 🎉</p>
+            </div>
+            <div class='footer'>
+                <p>EthioEvent Hub - Experience Ethiopia Like Never Before</p>
+                <p>&copy; 2026 EthioEvent Hub Team</p>
+            </div>
+        </div>
+    </body>
+    </html>
+    
+--------------------------------------------------------------------------------
+[2026-05-07 01:48:26] TO: test_persistence@ethio.com | SUBJECT: ✨ Welcome to EthioEvent Hub! | MESSAGE: 
+    <html>
+    <body style='font-family: Arial, sans-serif;'>
+        <div style='padding: 20px; border: 1px solid #eee; border-radius: 10px;'>
+            <h2 style='color: #6366f1;'>Welcome, Test Persistence!</h2>
+            <p>Thank you for joining EthioEvent Hub, Ethiopia's premier event platform.</p>
+            <p>You can now browse events, follow your favorite organizers, and book tickets instantly.</p>
+            <p>Ready to explore?</p>
+            <a href='#' style='padding: 10px 20px; background: #6366f1; color: white; text-decoration: none; border-radius: 5px;'>Start Browsing</a>
+        </div>
+    </body>
+    </html>
+    
+--------------------------------------------------------------------------------
+[2026-05-07 01:57:55] TO: ae847318@gmail.com | SUBJECT: Password Reset - EthioEvent Hub | MESSAGE: Hello Mikiyas,
+
+You requested a password reset. Click the link below to set a new password:
+http://localhost/Wep_Programming_Pro/EthioEventHub/pages/reset_password.php?token=92517ad344c527bb5de3d0638aab481c72f3355f988e329f342238c0a2ab51ec
+
+This link expires in 1 hour.
+--------------------------------------------------------------------------------
+[2026-05-07 01:58:26] TO: ae847318@gmail.com | SUBJECT: Password Reset - EthioEvent Hub | MESSAGE: Hello Mikiyas,
+
+You requested a password reset. Click the link below to set a new password:
+http://localhost/Wep_Programming_Pro/EthioEventHub/pages/reset_password.php?token=e9ae279b6755680c0f1baa6ffd0c2af5673a8f70d74248bfd8d8a8457b927f0b
+
+This link expires in 1 hour.
+--------------------------------------------------------------------------------
+[2026-05-07 01:58:32] TO: ae847318@gmail.com | SUBJECT: Password Reset - EthioEvent Hub | MESSAGE: Hello Mikiyas,
+
+You requested a password reset. Click the link below to set a new password:
+http://localhost/Wep_Programming_Pro/EthioEventHub/pages/reset_password.php?token=3040c73ece30abcf469c0db377dddff8205c17c8deb7fa24078c86a7bd66ce35
+
+This link expires in 1 hour.
+--------------------------------------------------------------------------------
+[2026-05-07 12:38:12] TO: edget@123gmail.com | SUBJECT: ✨ Welcome to EthioEvent Hub! | MESSAGE: 
+    <html>
+    <body style='font-family: Arial, sans-serif;'>
+        <div style='padding: 20px; border: 1px solid #eee; border-radius: 10px;'>
+            <h2 style='color: #6366f1;'>Welcome, Edget!</h2>
+            <p>Thank you for joining EthioEvent Hub, Ethiopia's premier event platform.</p>
+            <p>You can now browse events, follow your favorite organizers, and book tickets instantly.</p>
+            <p>Ready to explore?</p>
+            <a href='#' style='padding: 10px 20px; background: #6366f1; color: white; text-decoration: none; border-radius: 5px;'>Start Browsing</a>
+        </div>
+    </body>
+    </html>
+    
+--------------------------------------------------------------------------------
+[2026-05-07 12:45:49] TO: yoni@123gmail.com | SUBJECT: ✨ Welcome to EthioEvent Hub! | MESSAGE: 
+    <html>
+    <body style='font-family: Arial, sans-serif;'>
+        <div style='padding: 20px; border: 1px solid #eee; border-radius: 10px;'>
+            <h2 style='color: #6366f1;'>Welcome, Yonas Tadesse!</h2>
+            <p>Thank you for joining EthioEvent Hub, Ethiopia's premier event platform.</p>
+            <p>You can now browse events, follow your favorite organizers, and book tickets instantly.</p>
+            <p>Ready to explore?</p>
+            <a href='#' style='padding: 10px 20px; background: #6366f1; color: white; text-decoration: none; border-radius: 5px;'>Start Browsing</a>
+        </div>
+    </body>
+    </html>
+    
+--------------------------------------------------------------------------------
+[2026-05-07 12:48:44] TO: yoni@123gmail.com | SUBJECT: 🎫 Booking Confirmation - Half life of 3rd year batch 2016 | MESSAGE: 
+    <html>
+    <head>
+        <style>
+            body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
+            .wrapper { max-width: 600px; margin: 0 auto; border: 1px solid #eee; border-radius: 15px; overflow: hidden; }
+            .header { background: linear-gradient(135deg, #6366f1, #9333ea); padding: 40px 20px; color: white; text-align: center; }
+            .content { padding: 30px; }
+            .ticket { border: 2px dashed #6366f1; padding: 25px; margin: 25px 0; border-radius: 15px; background: #f8fafc; }
+            .ticket-title { color: #1e1b4b; margin-top: 0; font-size: 22px; }
+            .footer { background: #f1f5f9; padding: 20px; text-align: center; font-size: 12px; color: #64748b; }
+            .btn { display: inline-block; padding: 12px 25px; background: #6366f1; color: white; text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 20px; }
+        </style>
+    </head>
+    <body>
+        <div class='wrapper'>
+            <div class='header'>
+                <h1 style='margin:0;'>EthioEvent Hub</h1>
+                <p style='margin:5px 0 0;'>Your Premium Ticket is Confirmed!</p>
+            </div>
+            <div class='content'>
+                <h3>Hello Yonas Tadesse,</h3>
+                <p>Congratulations! Your booking for the upcoming event has been successfully confirmed. We're excited to have you join us.</p>
+                
+                <div class='ticket'>
+                    <h3 class='ticket-title'>Half life of 3rd year batch 2016</h3>
+                    <p style='margin:5px 0;'><strong>📅 Date:</strong> May 12, 2026</p>
+                    <p style='margin:5px 0;'><strong>📍 Venue:</strong> all 2016 batch</p>
+                    <p style='margin:5px 0;'><strong>🎟️ Quantity:</strong> 1 Tickets</p>
+                    <p style='margin:5px 0;'><strong>💰 Total:</strong> ETB 500.00</p>
+                    <p style='margin:15px 0 0; color:#6366f1; font-family:monospace; font-size:18px;'><strong>REF: ETH-2A769CFF</strong></p>
+                </div>
+                
+                <p>Please present the reference code or your digital ticket at the entrance.</p>
+                <a href='#' class='btn'>View in Dashboard</a>
+                <p style='margin-top:25px;'>Enjoy the experience! 🎉</p>
+            </div>
+            <div class='footer'>
+                <p>EthioEvent Hub - Experience Ethiopia Like Never Before</p>
+                <p>&copy; 2026 EthioEvent Hub Team</p>
+            </div>
+        </div>
+    </body>
+    </html>
+    
+--------------------------------------------------------------------------------
+[2026-05-07 17:03:11] TO: biruk123@gmail.com | SUBJECT: ✨ Welcome to EthioEvent Hub! | MESSAGE: 
+    <html>
+    <body style='font-family: Arial, sans-serif;'>
+        <div style='padding: 20px; border: 1px solid #eee; border-radius: 10px;'>
+            <h2 style='color: #6366f1;'>Welcome, Biruktawit!</h2>
+            <p>Thank you for joining EthioEvent Hub, Ethiopia's premier event platform.</p>
+            <p>You can now browse events, follow your favorite organizers, and book tickets instantly.</p>
+            <p>Ready to explore?</p>
+            <a href='#' style='padding: 10px 20px; background: #6366f1; color: white; text-decoration: none; border-radius: 5px;'>Start Browsing</a>
+        </div>
+    </body>
+    </html>
+    
+--------------------------------------------------------------------------------
+[2026-05-07 17:04:36] TO: biruk123@gmail.com | SUBJECT: 🎫 Booking Confirmation - Half life of 3rd year batch 2016 | MESSAGE: 
+    <html>
+    <head>
+        <style>
+            body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
+            .wrapper { max-width: 600px; margin: 0 auto; border: 1px solid #eee; border-radius: 15px; overflow: hidden; }
+            .header { background: linear-gradient(135deg, #6366f1, #9333ea); padding: 40px 20px; color: white; text-align: center; }
+            .content { padding: 30px; }
+            .ticket { border: 2px dashed #6366f1; padding: 25px; margin: 25px 0; border-radius: 15px; background: #f8fafc; }
+            .ticket-title { color: #1e1b4b; margin-top: 0; font-size: 22px; }
+            .footer { background: #f1f5f9; padding: 20px; text-align: center; font-size: 12px; color: #64748b; }
+            .btn { display: inline-block; padding: 12px 25px; background: #6366f1; color: white; text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 20px; }
+        </style>
+    </head>
+    <body>
+        <div class='wrapper'>
+            <div class='header'>
+                <h1 style='margin:0;'>EthioEvent Hub</h1>
+                <p style='margin:5px 0 0;'>Your Premium Ticket is Confirmed!</p>
+            </div>
+            <div class='content'>
+                <h3>Hello Biruktawit,</h3>
+                <p>Congratulations! Your booking for the upcoming event has been successfully confirmed. We're excited to have you join us.</p>
+                
+                <div class='ticket'>
+                    <h3 class='ticket-title'>Half life of 3rd year batch 2016</h3>
+                    <p style='margin:5px 0;'><strong>📅 Date:</strong> May 12, 2026</p>
+                    <p style='margin:5px 0;'><strong>📍 Venue:</strong> all 2016 batch</p>
+                    <p style='margin:5px 0;'><strong>🎟️ Quantity:</strong> 1 Tickets</p>
+                    <p style='margin:5px 0;'><strong>💰 Total:</strong> ETB 500.00</p>
+                    <p style='margin:15px 0 0; color:#6366f1; font-family:monospace; font-size:18px;'><strong>REF: ETH-D6876826</strong></p>
+                </div>
+                
+                <p>Please present the reference code or your digital ticket at the entrance.</p>
+                <a href='#' class='btn'>View in Dashboard</a>
+                <p style='margin-top:25px;'>Enjoy the experience! 🎉</p>
+            </div>
+            <div class='footer'>
+                <p>EthioEvent Hub - Experience Ethiopia Like Never Before</p>
+                <p>&copy; 2026 EthioEvent Hub Team</p>
+            </div>
+        </div>
+    </body>
+    </html>
+    
+--------------------------------------------------------------------------------
+[2026-05-07 17:34:07] TO: tsegish123@gmail.com | SUBJECT: ✨ Welcome to EthioEvent Hub! | MESSAGE: 
+    <html>
+    <body style='font-family: Arial, sans-serif;'>
+        <div style='padding: 20px; border: 1px solid #eee; border-radius: 10px;'>
+            <h2 style='color: #6366f1;'>Welcome, Tsegaw!</h2>
+            <p>Thank you for joining EthioEvent Hub, Ethiopia's premier event platform.</p>
+            <p>You can now browse events, follow your favorite organizers, and book tickets instantly.</p>
+            <p>Ready to explore?</p>
+            <a href='#' style='padding: 10px 20px; background: #6366f1; color: white; text-decoration: none; border-radius: 5px;'>Start Browsing</a>
+        </div>
+    </body>
+    </html>
+    
+--------------------------------------------------------------------------------
+[2026-05-07 17:46:29] TO: biruk123@gmail.com | SUBJECT: 🎫 Booking Confirmation - ወደ እግዚአብሔር ቤት እንሄድ ባሉኝ ጊዜ ደስ አለኝ።መዝሙር 122 ÷1 | MESSAGE: 
+    <html>
+    <head>
+        <style>
+            body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
+            .wrapper { max-width: 600px; margin: 0 auto; border: 1px solid #eee; border-radius: 15px; overflow: hidden; }
+            .header { background: linear-gradient(135deg, #6366f1, #9333ea); padding: 40px 20px; color: white; text-align: center; }
+            .content { padding: 30px; }
+            .ticket { border: 2px dashed #6366f1; padding: 25px; margin: 25px 0; border-radius: 15px; background: #f8fafc; }
+            .ticket-title { color: #1e1b4b; margin-top: 0; font-size: 22px; }
+            .footer { background: #f1f5f9; padding: 20px; text-align: center; font-size: 12px; color: #64748b; }
+            .btn { display: inline-block; padding: 12px 25px; background: #6366f1; color: white; text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 20px; }
+        </style>
+    </head>
+    <body>
+        <div class='wrapper'>
+            <div class='header'>
+                <h1 style='margin:0;'>EthioEvent Hub</h1>
+                <p style='margin:5px 0 0;'>Your Premium Ticket is Confirmed!</p>
+            </div>
+            <div class='content'>
+                <h3>Hello Biruktawit,</h3>
+                <p>Congratulations! Your booking for the upcoming event has been successfully confirmed. We're excited to have you join us.</p>
+                
+                <div class='ticket'>
+                    <h3 class='ticket-title'>ወደ እግዚአብሔር ቤት እንሄድ ባሉኝ ጊዜ ደስ አለኝ።መዝሙር 122 ÷1</h3>
+                    <p style='margin:5px 0;'><strong>📅 Date:</strong> May 07, 2026</p>
+                    <p style='margin:5px 0;'><strong>📍 Venue:</strong> ዚጊቲ አቡነ ገብረ መንፈስቅዱስ ገዳም</p>
+                    <p style='margin:5px 0;'><strong>🎟️ Quantity:</strong> 1 Tickets</p>
+                    <p style='margin:5px 0;'><strong>💰 Total:</strong> ETB 2,699.98</p>
+                    <p style='margin:15px 0 0; color:#6366f1; font-family:monospace; font-size:18px;'><strong>REF: ETH-0FE36F01</strong></p>
+                </div>
+                
+                <p>Please present the reference code or your digital ticket at the entrance.</p>
+                <a href='#' class='btn'>View in Dashboard</a>
+                <p style='margin-top:25px;'>Enjoy the experience! 🎉</p>
+            </div>
+            <div class='footer'>
+                <p>EthioEvent Hub - Experience Ethiopia Like Never Before</p>
+                <p>&copy; 2026 EthioEvent Hub Team</p>
+            </div>
+        </div>
+    </body>
+    </html>
+    
+--------------------------------------------------------------------------------
