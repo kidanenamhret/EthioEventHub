@@ -115,7 +115,10 @@ try {
 
     <div class="ticket-container">
         <div class="ticket-main">
-            <div class="brand"><i class="fas fa-bolt"></i> ETHIO EVENT HUB</div>
+            <div class="brand d-flex align-items-center">
+                <img src="../assets/images/logo.png" alt="Logo" width="30" height="30" class="me-2 rounded-circle object-fit-cover">
+                ETHIO EVENT HUB
+            </div>
             <h1 class="event-title"><?= htmlspecialchars($ticket['title']) ?></h1>
             
             <div class="info-grid mt-5">
@@ -147,6 +150,20 @@ try {
             </div>
 
             <div class="barcode"><?= $ticket['booking_reference'] ?></div>
+
+            <div class="mt-4 no-print border-top pt-4">
+                <label class="text-muted small fw-bold text-uppercase mb-2 d-block">Venue Location</label>
+                <div class="rounded-4 overflow-hidden" style="height: 150px; border: 1px solid #e2e8f0;">
+                    <iframe 
+                        width="100%" 
+                        height="100%" 
+                        frameborder="0" 
+                        style="border:0;" 
+                        src="https://maps.google.com/maps?q=<?= urlencode($ticket['venue']) ?>&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
         </div>
         
         <div class="ticket-stub">

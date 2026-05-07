@@ -194,11 +194,11 @@ function getEventImage($category, $dbImage) {
                     <div class="col-md-4">
                         <div class="input-group">
                             <span class="input-group-text bg-transparent border-0"><i class="fas fa-search text-accent"></i></span>
-                            <input type="text" name="search" class="form-control bg-transparent border-0 text-white" placeholder="Search experiences..." value="<?= htmlspecialchars($search) ?>">
+                            <input type="text" name="search" id="liveSearch" class="form-control bg-transparent border-0 text-white" placeholder="Search experiences..." value="<?= htmlspecialchars($search) ?>">
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <select name="category_id" class="form-select bg-transparent border-0 text-white" onchange="this.form.submit()">
+                        <select name="category_id" id="categoryFilter" class="form-select bg-transparent border-0 text-white" onchange="this.form.submit()">
                             <option value="0" class="text-dark">All Categories</option>
                             <?php foreach ($categories as $cat): ?>
                                 <option value="<?= $cat['id'] ?>" <?= $categoryId == $cat['id'] ? 'selected' : '' ?> class="text-dark">

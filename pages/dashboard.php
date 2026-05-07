@@ -46,7 +46,7 @@ try {
         
         // Chart data - all events
         $stmt = $pdo->query("
-            SELECT e.title, COUNT(b.id) as total_bookings 
+            SELECT e.title, COUNT(b.id) as total_bookings, SUM(b.total_price) as total_revenue
             FROM events e 
             LEFT JOIN bookings b ON e.id = b.event_id 
             GROUP BY e.id
@@ -80,7 +80,7 @@ try {
         
         // Chart data - organizer's events
         $stmt = $pdo->prepare("
-            SELECT e.title, COUNT(b.id) as total_bookings 
+            SELECT e.title, COUNT(b.id) as total_bookings, SUM(b.total_price) as total_revenue
             FROM events e 
             LEFT JOIN bookings b ON e.id = b.event_id 
             WHERE e.organizer_id = ? 
@@ -289,14 +289,25 @@ $_SESSION['csrf_token'] = $_SESSION['csrf_token'] ?? bin2hex(random_bytes(32));
                     type: 'bar',
                     data: {
                         labels: <?= json_encode(array_column($chartData, 'title')) ?>,
-                        datasets: [{
-                            label: 'Bookings',
-                            data: <?= json_encode(array_column($chartData, 'total_bookings')) ?>,
-                            backgroundColor: 'rgba(99, 102, 241, 0.6)',
-                            borderColor: '#6366f1',
-                            borderWidth: 2,
-                            borderRadius: 10
-                        }]
+                        datasets: [
+                            {
+                                label: 'Bookings',
+                                data: <?= json_encode(array_column($chartData, 'total_bookings')) ?>,
+                                backgroundColor: 'rgba(99, 102, 241, 0.6)',
+                                borderColor: '#6366f1',
+                                borderWidth: 2,
+                                borderRadius: 10
+                            },
+                            {
+                                label: 'Revenue (ETB)',
+                                data: <?= json_encode(array_column($chartData, 'total_revenue')) ?>,
+                                backgroundColor: 'rgba(236, 72, 153, 0.6)',
+                                borderColor: '#ec4899',
+                                borderWidth: 2,
+                                borderRadius: 10,
+                                type: 'line'
+                            }
+                        ]
                     },
                     options: {
                         scales: {

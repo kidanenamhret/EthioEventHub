@@ -32,6 +32,17 @@ try {
     $stmt->execute([$user_id]);
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
+    // Fetch booking count for loyalty badge
+    $stmt = $pdo->prepare("SELECT COUNT(*) FROM bookings WHERE user_id = ?");
+    $stmt->execute([$user_id]);
+    $booking_count = (int)$stmt->fetchColumn();
+
+    // Determine badge
+    $badge = ['name' => 'Member', 'color' => '#64748b', 'icon' => 'fa-user'];
+    if ($booking_count >= 10) $badge = ['name' => 'Gold VIP', 'color' => '#fbbf24', 'icon' => 'fa-crown'];
+    elseif ($booking_count >= 5) $badge = ['name' => 'Silver Pro', 'color' => '#94a3b8', 'icon' => 'fa-medal'];
+    elseif ($booking_count >= 1) $badge = ['name' => 'Enthusiast', 'color' => '#6366f1', 'icon' => 'fa-star'];
+
 } catch (PDOException $e) {
     die("Database error: " . $e->getMessage());
 }
@@ -178,7 +189,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['change_password'])) {
                             </div>
                         </div>
                         <h3 class="text-white mt-3 fw-bold"><?= htmlspecialchars($user['name']) ?></h3>
-                        <p class="text-white-50"><?= ucfirst($user['role']) ?></p>
+                        <div class="d-flex justify-content-center gap-2 mt-2">
+                            <span class="badge bg-soft-primary text-uppercase px-3 py-2 rounded-pill small" style="font-size: 0.65rem; background: rgba(99, 102, 241, 0.1); color: #6366f1; border: 1px solid rgba(99, 102, 241, 0.2);">
+                                <?= ucfirst($user['role']) ?>
+                            </span>
+                            <span class="badge px-3 py-2 rounded-pill small d-flex align-items-center" style="font-size: 0.65rem; background: <?= $badge['color'] ?>15; color: <?= $badge['color'] ?>; border: 1px solid <?= $badge['color'] ?>30;">
+                                <i class="fas <?= $badge['icon'] ?> me-2"></i> <?= strtoupper($badge['name']) ?>
+                            </span>
+                        </div>
                     </div>
 
                     <!-- Profile Info Form -->
