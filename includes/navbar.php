@@ -1,7 +1,14 @@
+<?php
+if (!isset($base_url)) {
+    // Detect if we are in a subdirectory like /pages/
+    $base_url = (strpos($_SERVER['PHP_SELF'], '/pages/') !== false) ? '../' : '';
+}
+?>
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center fw-bold" href="<?= $base_url ?>index.php">
-            <i class="fas fa-bolt me-2 text-accent"></i> ETHIO EVENT HUB
+            <img src="<?= $base_url ?>assets/images/logo.png" alt="EthioEvent Hub" height="40" class="me-2">
+            ETHIO EVENT HUB
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
