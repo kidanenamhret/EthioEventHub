@@ -1,3 +1,46 @@
+## EthioEventHub — Quick Setup & Submission README
+
+This README provides safe, step-by-step setup and a short checklist for submission without changing project functionality.
+
+1) Import database
+- Open your MySQL client (phpMyAdmin, MySQL Workbench, or CLI) and import `db.sql`.
+
+2) Update configuration
+- Edit `includes/config.php` and set `DB_HOST`, `DB_NAME`, `DB_USER`, `DB_PASS`, and `SITE_URL` as needed.
+
+3) Ensure PHP requirements
+- PHP 7.4+ with PDO MySQL extension enabled.
+
+4) Run locally for testing
+```bash
+cd "C:\Flash\software\EthioEventHub"
+php -S localhost:8000 -t .
+# open http://localhost:8000 in your browser
+```
+
+5) Non-destructive security checklist (apply on a branch)
+- Use prepared statements for any SQL that concatenates variables.
+- Validate & sanitize all `$_GET`/`$_POST` using `filter_input()`.
+- Escape output with `htmlspecialchars(..., ENT_QUOTES, 'UTF-8')` before printing user data.
+- Use `password_hash()` / `password_verify()` for passwords (already used).
+- Set session cookie flags in `includes/config.php` before `session_start()` (cookie_httponly, cookie_secure when HTTPS).
+
+6) Files of interest (concatenation or dynamic strings found)
+- `pages/book_event.php` (booking redirect & notification strings)
+- `pages/forgot_password.php` (reset link building)
+- `pages/send_ticket_email.php` (email body concatenation)
+- `pages/admin_backup.php` (backup generation)
+- `index.php`, `pages/events.php`, `pages/profile.php` (image path assembly)
+
+7) How to submit
+- Create a zip of the project root (include `db.sql`, `README.md`, `Project_Documentation.md`, and `docs/ERD.svg`).
+
+8) If you want me to harden code I can open a PR on branch `harden-and-docs` and:
+- convert any unsafe concatenated SQL to prepared statements
+- add server-side input validation examples
+- add secure session settings
+
+-- End of README
 # 🎉 EthioEvent Hub - Enterprise Edition
 
 EthioEvent Hub is a high-performance, full-stack event management ecosystem engineered for the modern Ethiopian market. It combines **Dark Glassmorphism** aesthetics with an enterprise-grade PHP/MySQL backend to deliver a secure, scalable, and visually stunning experience.
