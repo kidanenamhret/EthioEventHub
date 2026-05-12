@@ -34,15 +34,21 @@ body {
 /* Premium Background */
 .bg-overlay {
     position: fixed;
-    top: 0; left: 0; width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: radial-gradient(circle at 20% 30%, rgba(99, 102, 241, 0.15) 0%, transparent 40%),
-                radial-gradient(circle at 80% 70%, rgba(236, 72, 153, 0.1) 0%, transparent 40%);
+        radial-gradient(circle at 80% 70%, rgba(236, 72, 153, 0.1) 0%, transparent 40%);
     z-index: -1;
 }
 
 .hero-bg-image {
     position: fixed;
-    top: 0; left: 0; width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url('../images/hero.png');
     background-size: cover;
     background-position: center;
@@ -52,24 +58,47 @@ body {
 }
 
 /* Typography Overrides */
-h1, h2, h3, .navbar-brand {
+h1,
+h2,
+h3,
+.navbar-brand {
     font-family: 'Outfit', sans-serif;
 }
 
 /* Floating Animation */
 @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-15px); }
-    100% { transform: translateY(0px); }
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.animate-float { animation: float 6s ease-in-out infinite; }
-.animate-fade-in { animation: fadeIn 1s ease forwards; }
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease forwards;
+}
 
 /* Navbar Makeover */
 .navbar {
@@ -95,21 +124,25 @@ h1, h2, h3, .navbar-brand {
         padding: 25px;
         border-radius: 24px;
         border: 1px solid rgba(255, 255, 255, 0.1);
-        box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     }
+
     .navbar-nav .nav-link {
         padding: 12px 0 !important;
         border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     }
+
     .navbar-nav .nav-item:last-child .nav-link {
         border-bottom: none;
     }
+
     .navbar-nav .btn {
         width: 100%;
         margin-top: 15px;
         margin-left: 0 !important;
         padding: 12px !important;
     }
+
     .theme-toggle {
         margin: 15px auto;
     }
@@ -144,20 +177,22 @@ h1, h2, h3, .navbar-brand {
     font-weight: 600;
     letter-spacing: 0.5px;
     margin-bottom: 1.5rem;
-    border: 1px solid rgba(255,255,255,0.15);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     color: var(--accent-light);
 }
 
 .hero-subtitle {
     font-size: clamp(1rem, 4vw, 1.25rem);
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
     max-width: 800px;
     margin: 0 auto 2.5rem auto;
     line-height: 1.6;
 }
 
 /* Glass Cards */
-.card, .stat-item, .category-card {
+.card,
+.stat-item,
+.category-card {
     background: var(--glass) !important;
     -webkit-backdrop-filter: var(--glass-blur);
     backdrop-filter: var(--glass-blur);
@@ -171,7 +206,7 @@ h1, h2, h3, .navbar-brand {
     transform: translateY(-10px) scale(1.02);
     background: rgba(255, 255, 255, 0.08) !important;
     border-color: var(--accent) !important;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 .stat-item h2 {
@@ -202,6 +237,7 @@ h1, h2, h3, .navbar-brand {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     margin-left: 15px;
 }
+
 .theme-toggle:hover {
     transform: rotate(30deg) scale(1.1);
     background: var(--accent);
@@ -315,7 +351,7 @@ footer {
 
 .event-card:hover {
     transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
 }
 
 .text-accent {
@@ -327,7 +363,8 @@ footer {
 }
 
 /* Premium Form Overrides */
-.form-control, .form-select {
+.form-control,
+.form-select {
     background: rgba(255, 255, 255, 0.05) !important;
     border: 1px solid rgba(255, 255, 255, 0.1) !important;
     border-radius: 12px !important;
@@ -335,7 +372,8 @@ footer {
     transition: all 0.3s ease !important;
 }
 
-.form-control:focus, .form-select:focus {
+.form-control:focus,
+.form-select:focus {
     background: rgba(255, 255, 255, 0.1) !important;
     border-color: var(--accent) !important;
     box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2) !important;
@@ -343,16 +381,17 @@ footer {
 }
 
 /* Glass Modal & Dropdown Overrides */
-.modal-content, .dropdown-menu {
+.modal-content,
+.dropdown-menu {
     background: rgba(15, 23, 42, 0.95) !important;
     backdrop-filter: blur(20px) !important;
     border: 1px solid rgba(255, 255, 255, 0.1) !important;
     border-radius: 24px !important;
-    box-shadow: 0 25px 50px rgba(0,0,0,0.5) !important;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5) !important;
 }
 
 .dropdown-item {
-    color: rgba(255,255,255,0.8) !important;
+    color: rgba(255, 255, 255, 0.8) !important;
     padding: 10px 20px !important;
     transition: all 0.2s !important;
 }
@@ -404,7 +443,7 @@ footer {
 .dashboard-sidebar {
     width: 280px;
     background: white;
-    border-right: 1px solid rgba(0,0,0,0.05);
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
     padding: 30px 20px;
     display: flex;
     flex-direction: column;
@@ -414,7 +453,7 @@ footer {
 
 [data-theme="dark"] .dashboard-sidebar {
     background: rgba(15, 23, 42, 0.95);
-    border-right: 1px solid rgba(255,255,255,0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(20px);
 }
 
@@ -432,8 +471,12 @@ footer {
     opacity: 0.7;
 }
 
-.sidebar-link i { font-size: 1.1rem; }
-.sidebar-link:hover, .sidebar-link.active {
+.sidebar-link i {
+    font-size: 1.1rem;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
     background: rgba(99, 102, 241, 0.1);
     color: var(--accent);
     opacity: 1;
@@ -458,13 +501,13 @@ footer {
     border-radius: 20px;
     padding: 25px;
     height: 100%;
-    border: 1px solid rgba(0,0,0,0.03);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
 }
 
 [data-theme="dark"] .summary-box {
-    background: rgba(255,255,255,0.03);
-    border-color: rgba(255,255,255,0.05);
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.05);
 }
 
 .icon-box {
@@ -478,10 +521,25 @@ footer {
     margin-bottom: 15px;
 }
 
-.bg-soft-blue { background: #e0f2fe; color: #0369a1; }
-.bg-soft-purple { background: #f3e8ff; color: #7e22ce; }
-.bg-soft-orange { background: #ffedd5; color: #c2410c; }
-.bg-soft-green { background: #dcfce7; color: #15803d; }
+.bg-soft-blue {
+    background: #e0f2fe;
+    color: #0369a1;
+}
+
+.bg-soft-purple {
+    background: #f3e8ff;
+    color: #7e22ce;
+}
+
+.bg-soft-orange {
+    background: #ffedd5;
+    color: #c2410c;
+}
+
+.bg-soft-green {
+    background: #dcfce7;
+    color: #15803d;
+}
 
 @media (max-width: 991.98px) {
     .dashboard-sidebar {
@@ -489,8 +547,87 @@ footer {
         left: -280px;
         height: 100vh;
     }
+
     .dashboard-sidebar.show {
         left: 0;
     }
-    .dashboard-content { padding: 20px; }
+
+    .dashboard-content {
+        padding: 20px;
+    }
+}
+
+/* Mobile-first responsive enhancements */
+/* Grid for product/event cards: 1 column on mobile, expands on larger screens */
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .cards-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Ensure individual event/product cards are touch-friendly and flexible */
+.event-card,
+.featured-card,
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 160px;
+}
+
+/* Touch targets: make buttons and form controls easier to tap */
+.btn,
+.form-control,
+.form-select {
+    min-height: 44px;
+    padding: 10px 14px;
+    touch-action: manipulation;
+}
+
+/* Increase tappable area for icon buttons like wishlist */
+.btn-wishlist {
+    width: 52px;
+    height: 52px;
+    top: 12px;
+    right: 12px;
+}
+
+/* Navigation collapse overlay on small screens (keeps functionality but improves UX) */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 70px;
+        left: 12px;
+        right: 12px;
+        padding: 20px;
+        z-index: 1050;
+        border-radius: 16px;
+    }
+
+    .navbar-toggler {
+        z-index: 1100;
+    }
+}
+
+/* Utility class to apply the card grid to lists of events */
+.events-grid {
+    gap: 1rem;
 }
